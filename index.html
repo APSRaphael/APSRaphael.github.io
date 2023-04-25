@@ -71,6 +71,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-pdf转word" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/04/25/pdf%E8%BD%ACword/" class="article-date">
+  <time class="dt-published" datetime="2023-04-25T02:01:07.000Z" itemprop="datePublished">2023-04-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/04/25/pdf%E8%BD%ACword/">pdf转word</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pdf2docx</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">convert_pdf_to_docx</span>(<span class="params">pdf_path, docx_path</span>):</span><br><span class="line">    pdf2docx.parse(pdf_path, docx_path)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;PDF converted to Word successfully&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">read_table_from_docx</span>(<span class="params">docx_path</span>):</span><br><span class="line">    table = pd.read_table(docx_path, sep=<span class="string">&#x27;\t&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> table</span><br><span class="line"></span><br><span class="line">convert_pdf_to_docx(<span class="string">&#x27;path/to/output.pdf&#x27;</span>, <span class="string">&#x27;path/to/output.docx&#x27;</span>)</span><br><span class="line"><span class="comment"># table = read_table_from_docx(&#x27;path/to/output.docx&#x27;)</span></span><br><span class="line"><span class="comment"># print(table)</span></span><br></pre></td></tr></table></figure>
+
+<p>需要下载 <code>pdf2docx</code> 和 <code>pandas</code> 两个包。这里有个小技巧，直接使用终端下载会很慢，可以设置一下终端的代理，下载就会快很多很多。<br>使用这个工具转出来的 word 存在的问题：一、内容可能需要根据 pdf 本身的内容来看，如果 pdf 上本来的内容就是图片，转出来的 word 也就是图片。二、然后格式可能会有点乱，不能跟 pdf 保持一致， 需要手动修改。只能说没有那么完美。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/04/25/pdf%E8%BD%ACword/" data-id="clgvmvmfl0000ws9k4wo6cz3x" data-title="pdf转word" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python%E5%B7%A5%E5%85%B7-ChatGpt%E7%94%9F%E6%88%90/" rel="tag">Python工具 ChatGpt生成</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-让文件安全上云" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/04/20/%E8%AE%A9%E6%96%87%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8A%E4%BA%91/" class="article-date">
@@ -227,7 +270,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nodejs%E5%B7%A5%E5%85%B7-ChatGpt%E7%94%9F%E6%88%90/" rel="tag">Nodejs工具 ChatGpt生成</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8-ChatGpt%E7%94%9F%E6%88%90/" rel="tag">软件使用 ChatGpt生成</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nodejs%E5%B7%A5%E5%85%B7-ChatGpt%E7%94%9F%E6%88%90/" rel="tag">Nodejs工具 ChatGpt生成</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python%E5%B7%A5%E5%85%B7-ChatGpt%E7%94%9F%E6%88%90/" rel="tag">Python工具 ChatGpt生成</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8-ChatGpt%E7%94%9F%E6%88%90/" rel="tag">软件使用 ChatGpt生成</a></li></ul>
     </div>
   </div>
 
@@ -237,7 +280,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Nodejs%E5%B7%A5%E5%85%B7-ChatGpt%E7%94%9F%E6%88%90/" style="font-size: 20px;">Nodejs工具 ChatGpt生成</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8-ChatGpt%E7%94%9F%E6%88%90/" style="font-size: 10px;">软件使用 ChatGpt生成</a>
+      <a href="/tags/Nodejs%E5%B7%A5%E5%85%B7-ChatGpt%E7%94%9F%E6%88%90/" style="font-size: 20px;">Nodejs工具 ChatGpt生成</a> <a href="/tags/Python%E5%B7%A5%E5%85%B7-ChatGpt%E7%94%9F%E6%88%90/" style="font-size: 10px;">Python工具 ChatGpt生成</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8-ChatGpt%E7%94%9F%E6%88%90/" style="font-size: 10px;">软件使用 ChatGpt生成</a>
     </div>
   </div>
 
@@ -257,6 +300,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/04/25/pdf%E8%BD%ACword/">pdf转word</a>
+          </li>
         
           <li>
             <a href="/2023/04/20/%E8%AE%A9%E6%96%87%E4%BB%B6%E5%AE%89%E5%85%A8%E4%B8%8A%E4%BA%91/">让文件安全上云</a>
